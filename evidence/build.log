@@ -1,0 +1,6 @@
+Starting >>> bridge_test_msgs
+Starting >>> ros2_influx_bridge
+Finished <<< bridge_test_msgs [2.65s]
+Finished <<< ros2_influx_bridge [2.98s]
+
+Summary: 2 packages finished [3.22s]

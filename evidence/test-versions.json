@@ -1,0 +1,7 @@
+{
+  "pytest": "9.1.1",
+  "influxdb-client": "1.50.0",
+  "PyYAML": "6.0.3",
+  "requests": "2.34.2",
+  "python": "3.12.14"
+}

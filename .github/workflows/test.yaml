@@ -1,0 +1,28 @@
+name: test
+on: [push, pull_request]
+jobs:
+  jazzy:
+    runs-on: ubuntu-24.04
+    container: ros:jazzy-ros-base
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencies
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y python3-venv python3-colcon-common-extensions
+          python3 -m venv --system-site-packages /tmp/bridge-venv
+          /tmp/bridge-venv/bin/pip install -r requirements-test.txt
+      - name: Build and test
+        shell: bash
+        run: |
+          source /opt/ros/jazzy/setup.bash
+          source /tmp/bridge-venv/bin/activate
+          python -m colcon build --base-paths src test_interfaces
+          source install/setup.bash
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests --junitxml=test-results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: test-results.xml

@@ -1,0 +1,54 @@
+[WARN] [1790566894.156725548] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1790566894.156790346] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+WARNING ros2_influx_bridge: /bridge_test/all: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+WARNING ros2_influx_bridge: /bridge_test/all: All fields selected: nested messages and arrays will be flattened within configured limits
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+INFO ros2_influx_bridge: Subscribed /bridge_test/all [bridge_test_msgs/msg/MotorTelemetry] qos={'reliability': 'best_effort', 'durability': 'volatile', 'history': 'keep_last', 'depth': 100}
+WARNING ros2_influx_bridge: /bridge_test/selected: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+INFO ros2_influx_bridge: Subscribed /bridge_test/selected [bridge_test_msgs/msg/MotorTelemetry] qos={'reliability': 'reliable', 'durability': 'volatile', 'history': 'keep_last', 'depth': 100}
+WARNING ros2_influx_bridge: /bridge_test/gps: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+WARNING ros2_influx_bridge: /bridge_test/gps: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+INFO ros2_influx_bridge: Subscribed /bridge_test/gps [sensor_msgs/msg/NavSatFix] qos={'reliability': 'best_effort', 'durability': 'volatile', 'history': 'keep_last', 'depth': 100}
+WARNING ros2_influx_bridge: /bridge_test/latched: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+INFO ros2_influx_bridge: Subscribed /bridge_test/latched [bridge_test_msgs/msg/MotorTelemetry] qos={'reliability': 'reliable', 'durability': 'transient_local', 'history': 'keep_last', 'depth': 100}
+WARNING ros2_influx_bridge: /bridge_test/late: Topic/type is not currently visible; discovered types: []
+INFO ros2_influx_bridge: Running with volatile buffering; pending records do not survive process termination
+WARNING ros2_influx_bridge.writer: Write failed; retaining batch for retry (HTTP 503)
+WARNING ros2_influx_bridge: /bridge_test/late: Publisher //bridge_integration_publisher: QoS compatibility uncertain: WARNING: Publisher's liveliness is automatic, but subscription's is system_default;
+WARNING ros2_influx_bridge: /bridge_test/late: All fields selected: nested messages and arrays will be flattened within configured limits
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+INFO ros2_influx_bridge: Subscribed /bridge_test/late [std_msgs/msg/Float64] qos={'reliability': 'reliable', 'durability': 'volatile', 'history': 'keep_last', 'depth': 100}
+INFO ros2_influx_bridge: FINAL_STATS {"runtime": {}, "topics": {"/bridge_test/all#0": {"received": 40, "serialized": 40, "skipped_fields": 40}, "/bridge_test/gps#2": {"received": 40, "serialized": 5, "skipped_fields": 0, "throttled": 35}, "/bridge_test/latched#3": {"received": 1, "serialized": 1, "skipped_fields": 0}, "/bridge_test/late#4": {"received": 1, "serialized": 1, "skipped_fields": 0}, "/bridge_test/selected#1": {"received": 40, "serialized": 40, "skipped_fields": 0}}, "unresolved_topics": 0, "writer": {"acknowledged": 87, "enqueued": 87, "last_http_status": 503, "oldest_pending_sec": 2.3850000161473872e-06, "pending": 0, "pending_bytes": 0, "retry_requests": 6}}

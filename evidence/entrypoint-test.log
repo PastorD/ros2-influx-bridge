@@ -1,0 +1,13 @@
+usage: bridge [-h] {run,dump,validate} ...
+
+ROS 2 → InfluxDB 2 telemetry bridge
+
+positional arguments:
+  {run,dump,validate}
+    run                Forward configured topics
+    dump               Export all visible topic/type pairs to YAML
+    validate           Check config/schema and current graph without database
+                       writes
+
+options:
+  -h, --help           show this help message and exit

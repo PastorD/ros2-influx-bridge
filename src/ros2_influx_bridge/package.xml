@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ros2_influx_bridge</name>
+  <version>0.1.0</version>
+  <description>Message-agnostic YAML-configured ROS 2 to InfluxDB 2 bridge.</description>
+  <maintainer email="maintainers@example.invalid">ROS 2 Influx Bridge contributors</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosidl_runtime_py</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

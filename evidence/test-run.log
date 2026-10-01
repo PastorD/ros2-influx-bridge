@@ -1,0 +1,118 @@
+..................................................[WARN] [1790566879.240819797] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1790566879.240890773] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+getifaddrs: Operation not permitted
+{
+  "custom_messages_per_topic": 40,
+  "gps_points": 5,
+  "latched_points": 1,
+  "late_publisher_points": 1,
+  "dump_topic_pairs": 6,
+  "http_statuses": {
+    "503": 6,
+    "204": 2
+  },
+  "stats": {
+    "runtime": {},
+    "topics": {
+      "/bridge_test/all#0": {
+        "received": 40,
+        "skipped_fields": 40,
+        "serialized": 40
+      },
+      "/bridge_test/selected#1": {
+        "received": 40,
+        "skipped_fields": 0,
+        "serialized": 40
+      },
+      "/bridge_test/gps#2": {
+        "received": 40,
+        "skipped_fields": 0,
+        "serialized": 5,
+        "throttled": 35
+      },
+      "/bridge_test/latched#3": {
+        "received": 1,
+        "skipped_fields": 0,
+        "serialized": 1
+      },
+      "/bridge_test/late#4": {
+        "received": 1,
+        "skipped_fields": 0,
+        "serialized": 1
+      }
+    },
+    "writer": {
+      "enqueued": 87,
+      "retry_requests": 6,
+      "last_http_status": 503,
+      "acknowledged": 87,
+      "pending": 0,
+      "pending_bytes": 0,
+      "oldest_pending_sec": 2.3850000161473872e-06
+    },
+    "unresolved_topics": 0
+  },
+  "gps_latitude_roundtrip": 34.12345678912345,
+  "uint64_roundtrip": 18446744073709551615,
+  "unicode_and_backslash_roundtrip": true
+}
+..............
+64 passed in 20.87s

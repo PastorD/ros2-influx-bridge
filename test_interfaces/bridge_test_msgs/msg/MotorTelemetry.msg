@@ -1,0 +1,16 @@
+std_msgs/Header header
+geometry_msgs/Pose pose
+float64 latitude
+float64 longitude
+float64 temperature
+float32 current
+uint64 sequence
+bool enabled
+string label
+float64[] readings
+geometry_msgs/Vector3[] vectors
+bool[] flags
+string[] names
+uint8[] bytes
+wstring wide_label
+float64[2] fixed

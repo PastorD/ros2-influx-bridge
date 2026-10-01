@@ -1,0 +1,64 @@
+version: 1
+influxdb:
+  url: http://localhost:8086
+  org: robotics
+  bucket: telemetry
+  token_env: INFLUXDB_TOKEN
+  timeout_ms: 5000
+  gzip: true
+
+tags:
+  robot_id: robot_1
+
+writer:
+  batch_size: 1000
+  batch_bytes: 524288
+  flush_ms: 500
+  queue_size: 10000
+  queue_bytes: 16777216
+  overflow: drop_oldest
+  retry_initial_ms: 500
+  retry_max_ms: 30000
+  shutdown_timeout_sec: 5.0
+
+limits:
+  max_fields: 4096
+  max_array_length: 1024
+  max_depth: 32
+  max_point_bytes: 524288
+
+topics:
+  - topic: /gps/fix
+    type: sensor_msgs/msg/NavSatFix
+    measurement: gps
+    throttle_hz: 10.0
+    qos:
+      reliability: auto
+      durability: auto
+      history: keep_last
+      depth: 100
+    fields:
+      - latitude
+      - lon: longitude
+      - name: height
+        field: altitude
+        type: float64
+
+  - topic: /odom
+    type: nav_msgs/msg/Odometry
+    measurement: odometry
+    throttle_hz: 20.0
+    timestamp: receive
+    fields:
+      - x: pose.pose.position.x
+      - y: pose.pose.position.y
+      - field: twist.twist.linear.x
+        name: speed
+        type: float64
+
+  - topic: /battery_state
+    type: sensor_msgs/msg/BatteryState
+    measurement: battery
+    throttle_hz: 1.0
+    # Missing, null, or [] means every scalar leaf, including array elements.
+    fields: []
